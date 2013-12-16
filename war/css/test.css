@@ -1,0 +1,33 @@
+@charset "utf-8";
+/*test*/
+#test {
+  /*display: none;*/
+  position: absolute;
+  top: 0px;
+  left: 520px;
+  width: 20em;
+  padding: 1em;
+  opacity: 0.7;
+}
+#debug {
+  font-family: monospace;
+  font-size: .85em;
+  text-align: left;
+  line-height: 1.2em;
+}
+.debugItem {
+  background-color: #fff;
+}  
+.debugItemShaded {
+  background-color: #edf5ff;
+}
+#debugHeader button {/*clearDebug, clearBoard button*/
+  padding: .3em;
+}
+#clearDebug {
+  margin-right: 1em;
+}
+#qunit {
+  margin-top: 1em;
+}
+/*end of test*/

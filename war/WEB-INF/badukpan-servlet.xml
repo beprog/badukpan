@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    <!-- ========================= VIEW DEFINITIONS ========================= -->
+  <bean id="commonController" class="com.appspot.badukpan.common.controller.CommonController" />
+  <bean id="loginController" class="com.appspot.badukpan.login.controller.LoginController" />
+  <bean id="boutController" class="com.appspot.badukpan.bout.controller.BoutController" />
+  <bean id="reviewController" class="com.appspot.badukpan.review.controller.ReviewController" />
+  <bean id="optionController" class="com.appspot.badukpan.option.controller.OptionController" />
+  <bean id="aboutController" class="com.appspot.badukpan.about.controller.AboutController" />
+  <bean id="adminController" class="com.appspot.badukpan.admin.controller.AdminController" />
+  
+  <bean id="handlerMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+    <property name="mappings">
+        <props>
+            <prop key="/index.do">commonController</prop>
+            <prop key="/login.do">loginController</prop>
+            <prop key="/bout.do">boutController</prop>
+            <prop key="/review.do">reviewController</prop>
+            <prop key="/option.do">optionController</prop>
+            <prop key="/about.do">aboutController</prop>
+            <prop key="/admin.do">adminController</prop>
+        </props> 
+    </property>    
+  </bean> 
+  
+  <bean id="jspViewResolver"  class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+    <property name="prefix" value="/WEB-INF/jsp/" />
+    <property name="suffix" value=".jsp" />
+  </bean>
+  
+</beans>
