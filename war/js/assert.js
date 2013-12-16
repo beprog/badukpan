@@ -1,4 +1,4 @@
 var assert = function(condition, message) { 
-    if (!condition)
+    if (! condition)
         throw Error("Assert failed" + (typeof message !== "undefined" ? ": " + message : ""));
 };
