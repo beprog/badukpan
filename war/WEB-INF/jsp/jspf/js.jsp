@@ -1,6 +1,7 @@
 <!-- common js(lib) -->
 <script type="text/javascript" src="js/lib/modernizr-2.6.2.js"></script>
 <script type="text/javascript" src="js/lib/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/lib/d3.v3.js"></script>
 <script type="text/javascript" src="js/lib/underscore-min.js"></script>
 <script type="text/javascript" src="js/lib/qunit-1.11.0.js"></script>
 
