@@ -14,7 +14,7 @@
   <jsp:include page="jspf/test.jsp" />
   <jsp:include page="jspf/js.jsp" />
   <svg width="200" height="200">
-  	<circle cx="100" cy="100" r="50" fill="blue" stroke="gray" stroke-width="5" />
+  	<circle cx="150" cy="150" r="50" fill="blue" stroke="gray" stroke-width="5" />
   </svg>
 </body>
 </html>
