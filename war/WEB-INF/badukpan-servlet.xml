@@ -15,7 +15,7 @@
   <bean id="optionController" class="com.appspot.badukpan.option.controller.OptionController" />
   <bean id="aboutController" class="com.appspot.badukpan.about.controller.AboutController" />
   <bean id="adminController" class="com.appspot.badukpan.admin.controller.AdminController" />
-  <bean id="d3ex01Controller" class="com.appspot.badukpan.d3ex01.controller.D3ex01Controller" />
+  <bean id="d3exController" class="com.appspot.badukpan.d3ex.controller.D3exController" />
   
   <bean id="handlerMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
     <property name="mappings">
@@ -27,7 +27,7 @@
             <prop key="/option.do">optionController</prop>
             <prop key="/about.do">aboutController</prop>
             <prop key="/admin.do">adminController</prop>
-            <prop key="/d3ex01.do">d3ex01Controller</prop>
+            <prop key="/d3ex.do">d3exController</prop>
         </props> 
     </property>    
   </bean> 
