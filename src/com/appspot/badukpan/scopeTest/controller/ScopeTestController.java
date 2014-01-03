@@ -16,7 +16,7 @@ public class ScopeTestController extends AbstractController {
 	protected ModelAndView handleRequestInternal(HttpServletRequest request, HttpServletResponse response)
                                                                              			throws Exception {
         System.out.println("ScopeTestController");
-        request.setAttribute("view", "scopeTest");
-        return new ModelAndView("scopeTest");
+        request.setAttribute("view", "scopeTest"); 
+        return new ModelAndView("test/scopeTest");
     } 
 }

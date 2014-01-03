@@ -18,6 +18,7 @@
   <bean id="d3ex01Controller" class="com.appspot.badukpan.d3ex01.controller.D3ex01Controller" />
   <bean id="d3ex02Controller" class="com.appspot.badukpan.d3ex02.controller.D3ex02Controller" />
   <bean id="scopeTestController" class="com.appspot.badukpan.scopeTest.controller.ScopeTestController" />
+  <bean id="func1TestController" class="com.appspot.badukpan.func1Test.controller.Func1TestController" />
   
   <bean id="handlerMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
     <property name="mappings">
@@ -32,8 +33,9 @@
             <prop key="/d3ex01.do">d3ex01Controller</prop>
             <prop key="/d3ex02.do">d3ex02Controller</prop>
             <prop key="/scopeTest.do">scopeTestController</prop>
+            <prop key="/func1Test.do">func1TestController</prop>
         </props> 
-    </property>    
+    </property>
   </bean> 
   
   <bean id="jspViewResolver"  class="org.springframework.web.servlet.view.InternalResourceViewResolver">

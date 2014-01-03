@@ -17,6 +17,6 @@ public class D3ex01Controller extends AbstractController {
                                                                              			throws Exception {
         System.out.println("D3ex01Controller");
         request.setAttribute("view", "d3ex01");
-        return new ModelAndView("d3ex01");
+        return new ModelAndView("test/d3ex01");
     } 
 }
