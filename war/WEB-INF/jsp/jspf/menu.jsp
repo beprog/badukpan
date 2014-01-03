@@ -14,9 +14,6 @@
     <li><a href="review.do" <c:if test="${view == 'review'}">class="active"</c:if>>Review</a></li>
     <li><a href="option.do" <c:if test="${view == 'option'}">class="active"</c:if>>Option</a></li>
     <li><a href="about.do" <c:if test="${view == 'about'}">class="active"</c:if>>About</a></li>
-    <li><a href="admin.do" <c:if test="${view == 'admin'}">class="active"</c:if>>Admin</a></li>
-    <li><a href="d3ex01.do" <c:if test="${view == 'd3ex01'}">class="active"</c:if>>D3ex01</a></li>
-    <li><a href="d3ex02.do" <c:if test="${view == 'd3ex02'}">class="active"</c:if>>D3ex02</a></li>
       <!-- <ul>
         <li>대국, 정석정보 관리</li>
         <li>접속 통계</li>

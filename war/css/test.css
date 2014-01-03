@@ -5,7 +5,7 @@
   position: absolute;
   top: 0px;
   left: 520px;
-  width: 20em;
+  width: 25em;
   padding: 1em;
   opacity: 0.7;
 }
@@ -30,4 +30,12 @@
 #qunit {
   margin-top: 1em;
 }
+
+/*	for ninja	*/
+#results {
+  font-size: .85em;
+}
+#results li.pass { color: green; }
+#results li.fail { color: red; }
+
 /*end of test*/
