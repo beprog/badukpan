@@ -13,6 +13,6 @@
 	</div><!-- end of container -->	
   <jsp:include page="../jspf/test.jsp" />
   <jsp:include page="../jspf/js.jsp" />
-<script type="text/javascript" src="js/ninja/func-test1.js"></script>
+<script type="text/javascript" src="js/ninja/func-test3.js"></script>
 </body>
 </html>
