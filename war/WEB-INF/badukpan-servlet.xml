@@ -10,6 +10,18 @@
     <property name="suffix" value=".jsp" />
   </bean>
   <bean id="urlController" class="org.springframework.web.servlet.mvc.UrlFilenameViewController" />
+  <bean id="testHandlerMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+    <property name="mappings">
+        <props>
+            <prop key="test/d3Test1.do">urlController</prop>
+            <prop key="test/d3Test2.do">urlController</prop>
+            <prop key="test/funcTest1.do">urlController</prop>
+            <prop key="test/funcTest2.do">urlController</prop>
+            <prop key="test/funcTest3.do">urlController</prop>
+            <prop key="test/scopeTest.do">urlController</prop>
+        </props>
+    </property>
+  </bean> 
   <bean id="commonHandlerMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
     <property name="mappings">
         <props>
@@ -21,13 +33,6 @@
             <!-- urlController -->
             <prop key="index.do">urlController</prop>
             <prop key="about.do">urlController</prop>
-            <!-- test view -->
-            <prop key="test/d3Test1.do">urlController</prop>
-            <prop key="test/d3Test2.do">urlController</prop>
-            <prop key="test/funcTest1.do">urlController</prop>
-            <prop key="test/funcTest2.do">urlController</prop>
-            <prop key="test/funcTest3.do">urlController</prop>
-            <prop key="test/scopeTest.do">urlController</prop>
         </props>
     </property>
   </bean> 
