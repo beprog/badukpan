@@ -16,7 +16,7 @@ public class AdminController extends AbstractController {
 	protected ModelAndView handleRequestInternal(HttpServletRequest request, HttpServletResponse response)
                                                                              			throws Exception {
         System.out.println("AdminController");
-		request.setAttribute("view", "admin");
+		 request.setAttribute("view", "admin");
         return new ModelAndView("admin");
     } 
 }

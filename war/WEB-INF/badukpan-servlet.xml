@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:p="http://www.springframework.org/schema/p"
-  xmlns:context="http://www.springframework.org/schema/context"
-  xsi:schemaLocation="http://www.springframework.org/schema/beans
-    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
-    http://www.springframework.org/schema/context
-    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
   <bean id="jspViewResolver"  class="org.springframework.web.servlet.view.InternalResourceViewResolver">
     <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
@@ -14,29 +10,27 @@
     <property name="suffix" value=".jsp" />
   </bean>
   <bean id="urlController" class="org.springframework.web.servlet.mvc.UrlFilenameViewController" />
-  <bean id="handlerMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+  <bean id="commonHandlerMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
     <property name="mappings">
         <props>
-            <prop key="/login.do">loginController</prop>
-            <prop key="/bout.do">boutController</prop>
-            <prop key="/review.do">reviewController</prop>
-            <prop key="/option.do">optionController</prop>
-            <prop key="/admin.do">adminController</prop>
-            
+            <prop key="login.do">loginController</prop>
+            <prop key="bout.do">boutController</prop>
+            <prop key="review.do">reviewController</prop>
+            <prop key="option.do">optionController</prop>
+            <prop key="admin.do">adminController</prop>
             <!-- urlController -->
-            <prop key="/index.do">urlController</prop>
-            <prop key="/about.do">urlController</prop>
+            <prop key="index.do">urlController</prop>
+            <prop key="about.do">urlController</prop>
             <!-- test view -->
-            <prop key="/test/d3Test1.do">urlController</prop>
-            <prop key="/test/d3Test2.do">urlController</prop>
-            <prop key="/test/funcTest1.do">urlController</prop>
-            <prop key="/test/funcTest2.do">urlController</prop>
-            <prop key="/test/funcTest3.do">urlController</prop>
-            <prop key="/test/scopeTest.do">urlController</prop>
+            <prop key="test/d3Test1.do">urlController</prop>
+            <prop key="test/d3Test2.do">urlController</prop>
+            <prop key="test/funcTest1.do">urlController</prop>
+            <prop key="test/funcTest2.do">urlController</prop>
+            <prop key="test/funcTest3.do">urlController</prop>
+            <prop key="test/scopeTest.do">urlController</prop>
         </props>
     </property>
   </bean> 
-  
   <!-- ========================= VIEW DEFINITIONS ========================= -->
   <bean id="loginController" class="com.appspot.badukpan.login.controller.LoginController" />
   <bean id="boutController" class="com.appspot.badukpan.bout.controller.BoutController" />

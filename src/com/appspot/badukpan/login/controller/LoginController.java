@@ -16,7 +16,7 @@ public class LoginController extends AbstractController {
 	protected ModelAndView handleRequestInternal(HttpServletRequest request, HttpServletResponse response)
                                                                              			throws Exception {
         System.out.println("LoginController");
-		request.setAttribute("view", "login");
+		 request.setAttribute("view", "login");
         return new ModelAndView("login");
     } 
 }
