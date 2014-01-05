@@ -1,4 +1,4 @@
-package com.appspot.badukpan.d3ex02.controller;
+package com.appspot.badukpan.d3Test1.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -10,13 +10,13 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
  
 
-public class D3ex02Controller extends AbstractController {
+public class D3Test1Controller extends AbstractController {
 	protected final Log logger = LogFactory.getLog(getClass());
     @Override
 	protected ModelAndView handleRequestInternal(HttpServletRequest request, HttpServletResponse response)
                                                                              			throws Exception {
-        System.out.println("D3ex02Controller");
-        request.setAttribute("view", "d3ex02");
-        return new ModelAndView("test/d3ex02");
+        System.out.println("D3Test1Controller");
+        request.setAttribute("view", "d3Test1");
+        return new ModelAndView("test/d3Test1");
     } 
 }
